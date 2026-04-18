@@ -3,6 +3,8 @@ from __future__ import annotations
 import re
 
 
+
+
 def chunk_text(text: str, chunk_size: int = 900, overlap: int = 150) -> list[str]:
     """Split text into chunks on sentence boundaries to preserve meaning."""
     cleaned = " ".join((text or "").split())
