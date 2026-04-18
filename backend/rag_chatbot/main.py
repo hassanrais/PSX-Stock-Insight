@@ -9,6 +9,7 @@ from .rag_pipeline import StockRAGPipeline
 from .schemas import ChatRequest, ChatResponse, ReindexResponse, RetrievedChunk
 
 
+
 @lru_cache(maxsize=1)
 def get_pipeline() -> StockRAGPipeline:
     pipeline = StockRAGPipeline()
