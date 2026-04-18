@@ -8,6 +8,7 @@ from chromadb.config import Settings
 from .config import RAG_STORE_DIR
 
 
+
 class VectorStore:
     def __init__(self, collection_name: str = "stock_rag_docs") -> None:
         self.client = chromadb.PersistentClient(
